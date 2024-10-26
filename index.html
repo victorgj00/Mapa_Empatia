@@ -3,75 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Target Flip Card</title>
+    <title>Mi Página</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        .card {
-            width: 1320px;
-            height: 900px;
-            perspective: 1000px;
-            cursor: pointer;
-            padding-bottom: 50px;
-        }
-
-        .card-inner {
-            position: relative;
+        iframe {
             width: 100%;
-            height: 100%;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+            height: 900px; /* Ajusta la altura según necesites */
+            border: none;
         }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 20px;
-        }
-
-        .card-front {
-            background-image: url('MapaEmpatia.jpg'); /* Cambia esta URL por la imagen frontal */
-            background-size: cover;
-            background-position: center;
-        }
-
-        .card-back {
-            background-image: url('MapaEmpatia2.jpg'); /* Cambia esta URL por la imagen trasera */
-            background-size: cover;
-            background-position: center;
-            transform: rotateY(180deg);
-        }
-
-        /* Clase para girar la tarjeta */
-        .card-flip .card-inner {
-            transform: rotateY(180deg);
-        }
-
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front"></div>
-            <div class="card-back"></div>
-        </div>
-    </div>
-
-    <script>
-        window.alert("HAZ CLIC EN LA TARJETA PARA HACERLA GIRAR");
-        const card = document.querySelector('.card');
-        card.addEventListener('click', () => {
-            card.classList.toggle('card-flip');
-        });
-    </script>
+    <h1>Bienvenido a mi página</h1>
+    <iframe src="https://rojadirectaenhd.net/embed/eventos.html?r=aHR0cHM6Ly9mb3JsZXNzbWFrZS5zdG9yZS9jb2JvLmh0bWw/aWQ9REFaTl9MQV9MSUdB" title="Página externa"></iframe>
 </body>
 </html>
